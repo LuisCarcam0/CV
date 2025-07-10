@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LuisDevelop👩‍💻</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <!--    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>    -->
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Luis Ricardo Cárcamo López</h1>
+            <h2>Analista ciberseguridad - junior</h2>
+            <div class="redes">
+                <a href="https://github.com/LuisCarcam0" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <!--     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter" ></i></a>  -->
+                <a href="https://www.linkedin.com/in/luiscarcam0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B51950217239&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <!--          <a href="https://www.facebook.com/" ><i class="fa-solid fa-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luis.</span> Soy un analista de datos en formación y junior en ciberseguridad, con conocimientos en herramientas y lenguajes como React Native, 
+            JS, Python, SQL, R Studio, Excel, ETL, Power BI y C, C#, C++ visto en mi carrera profesional y usado en diversos proyectos. Estoy buscando mi primera oportunidad 
+            laboral como junior, donde pueda aplicar mis habilidades tanto en análisis de datos como en seguridad informática, mientras sigo creciendo profesionalmente.
+Soy apasionado por transformar datos en insights valiosos y me entusiasma la ciberseguridad, especialmente en integrar prácticas seguras en el manejo de información.
+Estoy siempre dispuesto a aprender cosas nuevas, asumir retos y aportar valor a los proyectos mediante soluciones innovadoras y seguras.
+</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Contactar mediante:</h3>
+                    <ul>
+                        
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 950 217 239
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luiscarcamo2803@gmail.com
+                        </li>
+                        
+                       
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-bug"></i>
+                            <span>MALWARE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-halved""></i>
+                            <span>RED TEAM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-id-badge"></i>
+                            <span>MFA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>SEGURIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-user-secret"></i>
+                            <span>PENTESTING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-terminal"></i>
+                            <span>KALI LINUX</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="MiCV.pdf" download="MiCV.pdf">
+            <button>
+                Visualizar CV <i class="fa-solid fa-download"></i>
+           
+                <span class="overlay"></span>
+            </button> 
+            </a>
+
+
+
+
+
+
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ecxel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wireshark, Nmap, Kali Linux, red team, blue team, SIEM </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Analìtico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>DATOS ACADÉMICOS</h4>
+                        <span class="casa">ZEGEL</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>Cuento con habilidades en desarrollo web y aplicaciones móviles, gestión y diseño de bases de datos, análisis de datos e inteligencia de negocios. Tengo experiencia en metodologías ágiles y predictivas para la gestión de proyectos tecnológicos, así como conocimientos en seguridad informática, auditorías y sistemas integrados de gestión. Además, domino técnicas de modelamiento estadístico, ciencia de datos y arquitectura de sistemas de información para apoyar la toma de decisiones estratégicas. También poseo capacidades en la gestión de tecnologías de la información y en la creación de proyectos innovadores orientados al desarrollo empresarial.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+             
+                  
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Agente de ventas OUTBOUND MOVISTAR PERÚ</h4>
+                        <span class="casa">STRATTON PERU S.A.C | Perú </span>
+                        <span class="fecha">30/04/2024 – 01/12/2024</span>
+                        <p>
+                           
+                            ✔ Como Agente de Ventas en Movistar Perú, promovía y vendía productos de líneas Post-pago.
+                            Identificaba necesidades, ofrecía soluciones y cerraba ventas. 
+                            También gestiono la atención postventa y mantengo relaciones comerciales para asegurar la satisfacción del cliente, 
+                            siempre estaba en los primeros puestos (Quartil 1) y excelente en mis indicadores. <br>
+                            ✔ Promocioné los servicios de telefonía móvil post-pago, garantizando una experiencia satisfactoria para el cliente
+                            y cumpliendo las metas establecidas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Obrero Planta Agroindustria
+                        </h4>
+                        <span class="casa">EMERGENT COLD S.A.C | Perú </span>
+                        <span class="fecha"> 24/10/2020 – 01/01/2021</span>
+                        <p>
+                            ✔  Como obrero en el proceso de producción de mango y arándano en temperaturas bajo 0 el producto se empaca congelado.
+                         </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Obrero Planta Agroindustria </h4>
+                        <span class="casa">EL PEDREGAL S.A | Perú</span>
+                        <span class="fecha">05/10/2020 – 13/01/2021</span>
+                        <p>
+                            ✔ Como Obrero de Packing Uva selección y embalaje en producción.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Obrero Planta Agroindustria </h4>
+                        <span class="casa">ECOSAC AGRICOLA S.A.C | Perú</span>
+                        <span class="fecha">07/07/2020 – 31/10/2020</span>
+                        <p>
+                            ✔ Me desempeñe en diversas áreas como Corte, Envasado, Cerrado, Vacío y Producto terminado.
+                            Conozco claramente todo el flujo de producción en envasado de pimiento en sus distintas presentaciones comerciales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+     <!--        <section id="portfolio" class="portfolio"> 
+        <div clav class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                LIMA
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                CONTACTAME: +51 950 217 239
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luiscarcamo2803@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/LuisCarcam0" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!--     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter" ></i></a>  -->
+            <a href="https://www.linkedin.com/in/luiscarcam0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B51950217239&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <!--          <a href="https://www.facebook.com/" ><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
